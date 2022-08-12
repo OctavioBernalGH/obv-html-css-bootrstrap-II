@@ -1,0 +1,127 @@
+:root {
+    /** Variables de estilos generales */
+    --fuente: 'Ubuntu', sans-serif;
+    --blanco: #FFFFFF;
+    --fondo: #06283D;
+    --fondo-menus: #1c375f;
+    --fondo-fuente: #DFF6FF;
+    --fondo-span: #E8AA42;
+}
+
+/** GLOBALES DOCUMENTO HTML */
+
+/** Estilos generales en el documento html */
+html {
+    /** Tamaño de la fuente en el documento */
+    /** Esto iguala 1rem = 10px; */
+    font-size: 62.5%;
+    /** Definimos modelo de cajas */
+    box-sizing: border-box;
+    /** Color de la fuente para todo el documento */
+    color: var(--fondo-fuente);
+}
+
+/** Selecciona todos los elementos del HTML */
+*,*:before, *:after{ box-sizing: inherit; }
+
+/** Estilos generales en el body */
+body {
+    /** Estilos de fondo */
+    background: var(--fondo); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    /** Fuentes */
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 1.5; /** Interlineado */
+}
+
+/** Estilos para todos los párrafos */
+p { font-size: 1.8rem; }
+
+/** Estilos para todos los enlaces */
+a { text-decoration: none; }
+
+/** Estilo para todos los encabezados */
+h1, h2, h3 { text-align: center; }
+
+/** Esilos para los h1 */
+h1 {
+    font-size: 6rem;
+    color: var(--fondo-fuente);
+}
+
+/** Estilos para los h2 */
+h2 { font-size: 3.2rem; }
+
+/** Estilos para los h3 */
+h3 { font-size: 2.4rem; }
+
+/** Estilos para la cabecera */
+header {
+    display: flex; /** Activamos flex */
+    justify-content: center; /** Centramos el componente */
+    margin: 2rem 0;
+}
+
+/** Estilos para los Span */
+header span {
+    font-size: 6rem;
+    font-weight: 500;
+    color: var(--fondo-span);
+}
+
+/** Tamaño carrito del header */
+header span svg { width: 6rem; }
+
+/** Estilos barra de navegación */
+.navegacion {
+    background-color: var(--fondo-menus);
+    padding: 1rem 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+/** Estilos enlaces de navegación */
+.navegacion__enlace {
+    font-family: var(--fuente);
+    font-weight: bold;
+    color: var(--fondo-fuente);
+    font-size: 3rem;
+}
+
+/** Propiedas hover enlaces navegación */
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--fondo-span);
+}
+
+/** Estilos pié de página */
+.footer {
+   background-color: var(--fondo-menus);
+   padding: 1rem 0; /** 1 rem arriba y abajo 0 en los lados */
+   margin-top: 2rem;
+}
+
+/** Estilos párrafo pié página */
+.footer__p {
+    font-family: var(--fuente);
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/** Estilos sección principal */
+.contenedor {
+    max-width: 120rem;
+    /** Centrar el contenedor */
+    margin: 0 auto;
+}
+
+/** Estilos del título del main */
+.contenedor__h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--fondo-span);
+}
