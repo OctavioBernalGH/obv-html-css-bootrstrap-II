@@ -125,3 +125,47 @@ header span svg { width: 6rem; }
     text-transform: uppercase;
     color: var(--fondo-span);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.producto {
+    background-color: var(--fondo-menus);
+    padding: 0.9rem;
+}
+
+.producto__imagen {
+    width: 100%;
+}
+
+.producto__informacion {
+    
+}
+
+.producto__precio,
+.producto__nombre {
+    font-size: 2rem;
+    font-family: var(--fuente);
+    text-align: center;
+}
+
+.producto__nombre {
+    color: var(--fondo-fuente);
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.producto__precio {
+    color: var(--fondo-span);
+    font-weight: bold;
+}
